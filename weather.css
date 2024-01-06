@@ -1,0 +1,553 @@
+body {
+  background-image: url("images/back1.jpg");
+  background-repeat: no-repeat;
+  background-size: 1600px 900px;
+  background-size: cover;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.box {
+  display: flex;
+  translate: 0px 81px;
+  color: whitesmoke;
+  font-size: 17px;
+  justify-content: center;
+}
+.box1 {
+  height: 30px;
+  width: 150px;
+  translate: -270px;
+  text-align: center;
+  cursor: pointer;
+}
+.box1:hover {
+  padding-top: 2px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+}
+
+.box2:hover {
+  padding-top: 2px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+}
+
+.box3:hover {
+  padding-top: 2px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+}
+
+.box4:hover {
+  padding-top: 2px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+}
+
+.box5:hover {
+  padding-top: 2px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+}
+
+.box2 {
+  height: 30px;
+  width: 150px;
+  translate: -140px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.box3 {
+  height: 30px;
+  width: 150px;
+  translate: -40px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.box4 {
+  height: 30px;
+  width: 150px;
+  translate: 80px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.box5 {
+  height: 30px;
+  width: 150px;
+  translate: 170px;
+  text-align: center;
+  cursor: pointer;
+}
+.allvisiblecontents {
+  height: 24em;
+  width: 50em;
+  display: block;
+  margin: auto;
+  border: 2px solid white;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  translate: 0em 13em;
+  visibility: hidden;
+}
+.logo {
+  height: 65px;
+  width: 65px;
+  position: absolute;
+  left: 20px;
+  top: 8px;
+  background-image: url("images/icon.png");
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: "Kalam", cursive;
+}
+#line {
+  position: absolute;
+  font-weight: 500;
+  font-size: 19px;
+  top: 14px;
+  left: 70px;
+}
+.line2 {
+  position: absolute;
+  font-weight: 500;
+  font-size: 19px;
+  top: 14px;
+  right: 33px;
+  color: white;
+  font-family: "Kalam", cursive;
+}
+.main-search-input {
+  background: #fff;
+  padding: 0 120px 0 0;
+  border-radius: 1px;
+  margin-top: 200px;
+  box-shadow: 0px 0px 0px 6px rgba(255, 255, 255, 0.3);
+}
+
+.fl-wrap {
+  float: left;
+  width: 100%;
+  position: relative;
+  top: -83px;
+}
+
+.main-search-input:before {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  width: 50px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.41);
+  left: 50%;
+  margin-left: -25px;
+}
+
+.main-search-input-item {
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  border-right: 1px solid #eee;
+  height: 40px;
+  position: relative;
+}
+
+.main-search-input-item input:first-child {
+  border-radius: 100%;
+}
+
+.main-search-input-item input {
+  float: left;
+  border: none;
+  width: 100%;
+  height: 40px;
+  padding-left: 31px;
+}
+
+.main-search-button {
+  background: #4db7fe;
+  cursor: pointer;
+}
+
+.main-search-button:hover {
+  background: #2aa76a;
+  cursor: pointer;
+}
+
+.main-search-button {
+  position: absolute;
+  right: 0px;
+  height: 40px;
+  width: 120px;
+  color: #fff;
+  top: 0;
+  border: none;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.main-search-input-wrap {
+  display: block;
+  width: 670px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+:focus {
+  outline: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .main-search-input {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 14px 20px 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 10px rgba(255, 255, 255, 0);
+  }
+
+  .main-search-input-item {
+    width: 100%;
+    border: 1px solid #eee;
+    height: 50px;
+    border: none;
+    margin-bottom: 10px;
+  }
+
+  .main-search-input-item input {
+    border-radius: 6px !important;
+    background: #fff;
+  }
+
+  .main-search-button {
+    position: relative;
+    float: left;
+    width: 100%;
+    border-radius: 6px;
+  }
+}
+.boxfordates {
+  opacity: 0.88;
+  color: white;
+  visibility: hidd;
+  display: flex;
+  justify-content: center;
+  translate: 0px 148px;
+}
+
+#dayname {
+  height: 33px;
+  width: 94px;
+  text-align: center;
+}
+
+#date {
+  height: 33px;
+  width: 22px;
+}
+
+#month {
+  height: 33px;
+  width: 82px;
+}
+
+#year {
+  height: 33px;
+  width: 82px;
+}
+
+#time {
+  height: 33px;
+  width: 200px;
+  margin-left: -27px;
+}
+#place_name {
+  font-size: 30px;
+  font-weight: 740;
+  color: aliceblue;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  width: 442px;
+  position: relative;
+  top: -215px;
+}
+.thermometer {
+  height: 100px;
+  background-image: url(images/thermometer.gif);
+  background-size: 25px 86px;
+  background-repeat: no-repeat;
+  visibility: hidden;
+  display: inline-block;
+  width: 30px;
+  position: relative;
+  left: 21em;
+  top: -25em;
+}
+#temperature {
+  font-weight: 750;
+  font-size: 34px;
+  padding-top: 10px;
+  color: white;
+  display: inline-block;
+  translate: 374px -183px;
+}
+.otherFactors {
+  height: 153px;
+  width: 234px;
+  font-size: 14px;
+  font-weight: 600;
+  visibility: hidden;
+  border: 2px solid white;
+  translate: 526px -244px;
+  background-color: aliceblue;
+  opacity: 0.8;
+}
+#forRealFeel {
+  height: 40px;
+  width: 40px;
+  margin-top: 18px;
+  margin-left: 5px;
+}
+#forPressure {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 64px;
+  left: 8px;
+}
+#forWindspeed {
+  height: 26px;
+  width: 40px;
+  position: absolute;
+  top: 111px;
+  left: 8px;
+}
+#forRealFeelContent {
+  position: absolute;
+  top: 22px;
+  left: 118px;
+  width: 83px;
+  height: 24px;
+  padding-left: 14px;
+}
+
+#forPressureContents {
+  top: 71px;
+  left: 127px;
+  width: 83px;
+  height: 24px;
+  position: absolute;
+}
+#forWindspeedContents {
+  position: absolute;
+  left: 144px;
+  width: 96px;
+  height: 24px;
+  top: 114px;
+}
+#P1 {
+  font-weight: 600;
+  position: absolute;
+  top: 22px;
+  left: 55px;
+}
+
+#P2 {
+  font-weight: 600;
+  position: absolute;
+  top: 69px;
+  left: 55px;
+}
+
+#P3 {
+  font-weight: 600;
+  position: absolute;
+  top: 113px;
+  left: 55px;
+}
+#weatherImg {
+  height: 158px;
+  width: 185px;
+  background-image: url(images/haze.webp);
+  background-repeat: no-repeat;
+  background-size: 180px 150px;
+  visibility: hidden;
+  translate: -243px -741px;
+}
+#weatherType {
+  position: relative;
+  top: -197%;
+  left: -69%;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 8px;
+  color: white;
+}
+.horizontalLine {
+  height: 0px;
+  width: 0em;
+  position: relative;
+  top: 8em;
+  left: 47em;
+  visibility: hidden;
+}
+
+#humidity {
+  height: 44px;
+  width: 272px;
+  background-image: url(images/humidity.jpg);
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+  font-weight: 600;
+  visibility: hidden;
+  position: relative;
+  top: -648px;
+  left: 2em;
+  color: white;
+  background-color: aliceblue;
+  opacity: 0.8;
+  width: 186px;
+  padding-top: 1px;
+}
+
+#humidity p {
+  margin-top: 7px;
+  margin-left: 44px;
+  color: darkslategrey;
+  font-weight: 600;
+}
+#humid {
+  position: relative;
+  height: 32px;
+  width: 72px;
+  top: -680px;
+  left: 20%;
+  font-weight: 600;
+  color: darkslategrey;
+}
+.rise {
+  width: 213px;
+  position: relative;
+  top: -35em;
+  height: 44px;
+  background-image: url(images/sunrise.png);
+  background-repeat: no-repeat;
+  background-size: 40px 42px;
+  visibility: hidden;
+  border: 2px solid white;
+  left: 11em;
+  background-color: aliceblue;
+  opacity: 0.8;
+}
+.rise p {
+  margin-left: 48px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+#riseContent {
+  width: 90px;
+  position: relative;
+  top: -37em;
+  left: 17em;
+  height: 24px;
+  font-weight: 400;
+}
+
+.set {
+  width: 213px;
+  position: relative;
+  top: -628px;
+  left: 28em;
+  height: 44px;
+  background-image: url(images/set.png);
+  background-repeat: no-repeat;
+  background-size: 40px 42px;
+  visibility: hidden;
+  border: 2px solid white;
+  background-color: aliceblue;
+  opacity: 0.8;
+}
+.set p {
+  margin-left: 48px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+#setContent {
+  width: 90px;
+  position: relative;
+  top: -660px;
+  left: 538px;
+  height: 24px;
+  font-weight: 400;
+}
+
+.dayLength {
+  position: relative;
+  height: 63px;
+  width: 275px;
+  top: -50em;
+  right: -1em;
+  background-image: url(images/daylength.png);
+  background-repeat: no-repeat;
+  background-size: 70px 70px;
+  visibility: hidden;
+  border: 1px solid white;
+  background-color: aliceblue;
+  opacity: 0.8;
+}
+.dayLength p {
+  left: 70px;
+  width: 109px;
+  position: absolute;
+  top: 22px;
+  font-weight: 600;
+  right: -11em;
+  color: darkslategrey;
+}
+#dayLengthContent {
+  width: 109px;
+  position: relative;
+  top: -839px;
+  font-weight: 600;
+  right: -181px;
+  color: darkslategrey;
+}
+
+#showError {
+  position: absolute;
+  left: 32%;
+  top: 274px;
+  color: aliceblue;
+  font-size: 18px;
+  padding: 5px;
+  background-color: darkslategrey;
+}
+#loader {
+  position: absolute;
+  top: 272px;
+  left: 36%;
+  color: white;
+  font-size: 24px;
+}
+#cityNotFound {
+  position: absolute;
+  top: 271px;
+  left: 33%;
+  color: aliceblue;
+  font-size: 18px;
+}
